@@ -1,0 +1,247 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar+One&display=swap');
+
+:root {
+
+
+    /* mycolor */
+    --c__orange: #e98c2e;
+    --c__black: rgb(26, 26, 26);
+    --c__black-secondary: #2e2e2e;
+    --c__white-secondary: #fcf7f7;
+
+
+
+}
+
+/*--------------font-family and font siza ------------------*/
+/*----400,500,600,700----*/
+
+
+
+
+
+
+
+
+
+
+/*-------------- thẻ menu ----------------------------*/
+.cursor {
+    cursor: pointer;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: rgb(var(--bs-danger-rgb));
+}
+
+a {
+    text-decoration: none;
+    color: inherit !important;
+
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.hover-link:hover {
+    color: var(--c__orange) !important;
+    cursor: pointer;
+}
+
+
+.my-container-1 {
+
+    padding: 0px 30px !important;
+
+
+}
+
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.fs-15 {
+    font-size: 15px !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+.my-text-orange {
+    color: var(--c__orange) !important;
+
+}
+
+.my-bg-orange {
+    background-color: var(--c__orange) !important;
+}
+
+
+.my-bg-black {
+    background-color: var(--c__black) !important;
+}
+
+.my-bg-black-secondary {
+    background-color: var(--c__black-secondary) !important;
+}
+
+
+.my-text-white-secondary {
+    color: var(--c__white-secondary) !important;
+
+}
+
+
+
+
+
+
+
+
+html,
+body {
+
+
+
+    font-size: 16px;
+
+
+    font-family: 'Playfair Display', serif;
+
+    color: #fff;
+    overflow-y: hidden;
+
+}
+
+
+* {
+    font-family: 'Playfair Display', serif;
+    /* font-family: 'Pattaya' !important; */
+}
+
+
+
+
+.my-font-1 {
+    font-family: 'Pattaya' !important;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+
+}
+
+::-webkit-scrollbar-track {
+    /* background-color: black; */
+
+    /* màu nền của thanh scroll bar */
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--c_orange-secondary);
+
+    border-radius: 35px;
+    box-shadow: inset 0 0 5px grey;
+    /* màu của phần nút */
+}
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+.fw-700 {
+    font-weight: 900 !important;
+}
+
+
+.my-font-1 {
+    font-family: 'Sigmar One', cursive !important;
+}
+
+.btn-orange {
+
+    color: #fff !important;
+    background-color: var(--c__orange) !important;
+    padding: 20px 65px;
+
+}
+
+.btn-orange:hover {
+    color: var(--c__orange) !important;
+    background-color: #fff !important;
+}
+
+
+
+
+/* underline link hover */
+
+.border-link {
+
+    position: relative !important;
+}
+
+.border-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 3px;
+    background-color: var(--c__orange);
+    width: 0%;
+    z-index: 2;
+    transition: 0.5s linear;
+
+}
+
+.border-link:hover::before {
+    width: 100%;
+}
+
+
+.hide-on-pc {
+    display: none !important;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .my-container-1 {
+        padding: 0px 15px !important;
+
+    }
+
+    .hide-on-tablet {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .my-container-1 {
+        padding: 0px 10px !important;
+
+    }
+
+    /* .show-on-mobile {} */
+
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .show-on-mobile {
+        display: block !important;
+    }
+}
